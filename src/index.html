@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta property="og:image" content="https://projects.seattletimes.com/2018/moving-mountain-goats/assets/social.jpg" />
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <%= t.include("partials/_nav.html") %>
+    <%= t.include("partials/_ad.html", { type: "banner" }) %>
+
+  <header class="splash">
+    <h1>Opioid darts, helicopters, refrigerator trucks: How to move a goat from one mountain range to another</h1>
+    <video src="./assets/videos/0_Landing.mp4" autoplay playsinline loop muted></video>
+    <div class="captionLeft">(Ramon Dompor / The Seattle Times)</div>
+  </header>
+
+  <main class="content">
+
+    <div class="byline constrained">
+          By <a class="name" href="https://www.seattletimes.com/author/evan-bush/">Evan Bush</a>
+          <div class="staff">Seattle Times staff reporter</div>
+          <div class="date">Published October 18, 2018</div>
+    </div>
+    <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section1) %>
+    </div>
+
+      <img src="assets/Mountain-goat-mugging-W.jpg" alt="How a mountain goat is 'mugged'" class="hidden-mobile">
+      <img src="assets/Mountain-goat-mugging-Mobile.jpg" alt="How a mountain goat is 'mugged'" class="visible-mobile">
+      <div class="captionLeft">(Reporting: Evan Bush, Graphic: Mark Nowlin / The Seattle Times)</div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section2) %>
+      </div>
+
+      <hr>
+
+      <div class="floating constrained">
+        <div>
+            <img src="assets/originstorygoat.jpg" alt="Historic article clipping on mountain goats" aria-describedby="historic-caption">
+          </a>
+            <div class="caption" id="historic-caption">For this February 1948 article, Olympic National Park officials told The Seattle Times an estimated 100 goats lived in the Olympic mountains. Four goats came from the Canadian Selkirks in 1925, according to the article. Eight arrived from Alaska in 1929 in an exchange for Olympic Roosevelt elk calves. Most goats were released at Mount Storm King, beside Lake Crescent. Locals thought the goats had died, but noticed white forms on high crags in the early 1930s. (The Seattle Times)</div>
+        </div>
+      </div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section3) %>
+      </div>
+
+      <%= t.include("_prerollVideo.html", { file: "1_Capture_loop.mp4", id: "5845057725001", runtime: "0:57" }) %>
+      <div class="caption">Goats are captured at Olympic National Park and taken by helicopter to relocation crews. (Ramon Dompor / The Seattle Times)</div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section4) %>
+      </div>
+      
+      <div class="floating constrained">
+        <div>
+            <img src="assets/photos/GoatRelocation_goats_truck_vert.jpg" alt="Goats dangling from a helicopter" aria-describedby="truck-caption">
+          </a>
+            <div class="caption" id="truck-caption">Wearing eye masks, horn pads and leg straps, goats dangle from a helicopter. (Ramon Dompor / The Seattle Times)</div>
+        </div>
+      </div>
+      
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section4b) %>
+      </div>
+
+      <%= t.include("_prerollVideo.html", { file: "2_Veterinary_loop.mp4", id: "5845057475001", runtime: "1:20" }) %>
+      <div class="caption">Veterinary staffers check over the goats’ health, take samples and tag their ears. (Ramon Dompor / The Seattle Times)</div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section5) %>
+      </div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section6) %>
+      </div>
+    
+      <img src="assets/mountain-goats-capture-W.jpg" alt="Mountain goats' path from Olympic National Park to the North Cascades" class="hidden-mobile">
+      <img src="assets/mountain-goats-capture-mobile.jpg" alt="Mountain goats' path from Olympic National Park to the North Cascades" class="visible-mobile">
+      <div class="captionLeft">Source: National Park Service (Emily M. Eng / The Seattle Times)</div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section7) %>
+      </div>
+
+      <%= t.include("_prerollVideo.html", { file: "3_Release_loop.mp4", id: "5845053912001", runtime: "1:40" }) %>
+      <div class="caption">Goats spring from their crates as they’re released into their new home, the Cascade Mountains. (Ramon Dompor / The Seattle Times)</div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section8) %>
+      </div>
+      
+      <div class="floating constrained">
+        <%= t.include("partials/_ad.html", { type: "square" }) %>
+      </div>
+
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section8b) %>
+      </div>
+
+      <div class="floating constrained">
+        <div>
+            <img src="assets/photos/GoatRelocation_rattlesnake.jpg" alt="Goat standing on Rattlesnake Ledge" aria-describedby="rattlesnake-caption">
+          </a>
+            <div class="caption" id="rattlesnake-caption">A mountain goat that once lived at Olympic National Park took up temporary residence at Rattlesnake Ledge, a popular destination for hikers near North Bend. The goat was not afraid of people and not aggressive, but it got within about 12 feet of people, said hiker Hella Döge. "The goat was actually following us. Everyone shuffled around and tried to keep distance from the goat," she said. (Photo courtesy of Hella Döge)</div>
+        </div>
+      </div>
+      
+      <div class="constrained">
+        <%= t.renderMarkdown(archieml.story.section9) %>
+      </div>
+
+      <hr>
+
+      <div class="constrained">
+        <img src="assets/mountain-goat-run-w.jpg" alt="Running mountain goat">
+        <div class="captionLeft">(Mark Nowlin / The Seattle Times)</div>
+      </div>
+
+  </main>
+      
+  <footer class="credits constrained">
+      <ul>
+        <li> <b>Reporter:</b> Evan Bush, <a href="mailto:ebush@seattletimes.com">ebush@seattletimes.com</a>; on Twitter: <a href="https://twitter.com/EvanBush">@evanbush</a></li>
+        <li> <b>Videos:</b> Ramon Dompor</li>
+        <li> <b>Graphics and maps:</b> Mark Nowlin and Emily M. Eng</li>
+        <li> <b>Photos:</b> Ramon Dompor</li>
+        <li> <b>Development and design:</b> Emily M. Eng</li>
+        <li> <b>Project editors:</b> Benjamin Woodard and Laura Gordon</li>
+      </ul>
+    </footer>
+
+
+    <%= t.include("partials/_navBottom.html") %>
+      <script src="app.js" async></script>
+      <% if (json.project.production) { %>
+      <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+      <%= t.include("partials/_workHere.html") %>
+      <% } %>
+
+  </body>
+ </html>

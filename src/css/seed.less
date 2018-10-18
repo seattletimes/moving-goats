@@ -1,0 +1,101 @@
+@import "seattletimes";
+@import "bc-preroll";
+@import "header";
+
+@accent: rgb(5, 112, 55);
+
+.visible-mobile {
+  display: none !important;
+}
+
+@media @mobile {
+  .visible-mobile {
+    display: inline !important;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+main.content {
+  padding: 20px 16px;
+}
+
+.constrained {
+margin: auto;
+max-width:800px;
+padding:0 16px;
+}
+
+.byline {
+  padding:40 0px;
+}
+
+.caption {
+  margin: 6px auto 0;
+  max-width: 960px;
+  line-height: 1.2;
+  font-size: 14px;
+  font-style: italic;
+  font-family: @df-sans;
+  color: @df-middle-gray;
+}
+
+.captionLeft {
+  margin: 6px auto 0;
+  max-width: 960px;
+  text-align: right;
+  line-height: 1.2;
+  font-size: 14px;
+  font-style: italic;
+  font-family: @df-sans;
+  color: @df-middle-gray;
+}
+
+main > img {
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+}
+
+hr {
+	max-width: 350px;
+	width: 50%;
+	height: 6px;
+	background: @accent;
+	border: none;
+	margin: 40px auto;
+}
+
+main.content {
+	em {
+		font-weight: bold;
+		font-style: normal;
+		font-size: 120%;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+
+.floating > div, .floating > img {
+  float: right;
+  margin-left: 20px;
+}
+
+.floating > div {
+  width: 350px;
+  max-width: 100%;
+  @media @mobile {
+    float: none;
+    margin: auto;
+  }
+
+.floating > img {
+  width: 3500px;
+  @media @mobile {
+    width: 150px;
+  }
+	}
+}
